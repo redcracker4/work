@@ -1,0 +1,439 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
+
+body {
+    height: 100vh;
+}
+/*메인화면*/
+#wrap_main {
+    background: #000;
+    height: 100vh;   
+}
+.main .contents {
+    width: 100%;
+    height: 100vh; 
+    background: url(../img/img_main_top.png) no-repeat top right;
+    position: absolute;
+    top: 0;
+}
+.main .contents .main_bg {
+    width: 100%;
+    height: 100vh; 
+    background: url(../img/img_main_bottom.png) no-repeat bottom left;
+    text-align: center;
+}
+/*모바일*/
+@media screen and (max-width: 768px) {
+
+    /*header*/
+    .header {
+        background:none;
+        padding: 5%;
+        position:absolute;
+        top:0;
+        z-index: 100;
+        width: 90%;
+    }
+    .header .menu {
+        background: url(../img/ico_menu.png) no-repeat;
+        width: 32px;
+        height: 32px;
+        text-indent: -99999px;
+        display: inline-block;
+        border: none;
+    }
+    .header .prev {
+        background: url(../img/ico_arrow_left.png) no-repeat left -4px;
+        width: 32px;
+        height: 40px;
+        cursor: pointer;
+        text-indent: -9999px;
+        display: inline-block;
+        border: none;
+        margin-top: -3px;
+    }
+    .header .setting  {
+        background: url(../img/ico_setting.png) no-repeat;
+        width: 32px;
+        height: 32px;
+        text-indent: -99999px;
+        float: right;
+        border: none;
+    }
+    /*메인화면*/
+    .main .contents button.logo {
+        background: url(../img/logo.png) no-repeat;
+        width: 178px;
+        height: 178px;
+        margin-top: 50%;
+        display: inline;
+        border: none;
+        cursor: pointer;
+    }
+
+    /*컨텐츠영역*/
+    .contents {
+        width: 100%;
+        display: inline-block;
+        overflow:hidden;
+    }
+    .device {
+        position:fixed;
+        bottom: 0;
+    }
+
+    .device ul {
+        position: relative;
+        overflow:hidden;
+        width: 250%;
+        display: flex;
+        background: none;
+    }
+    .device ul li {
+        margin: 3% 0 3% 2%;
+        padding: 3%;
+        border-radius: 10px;
+        background: #282828;
+        opacity: 90%;
+        color: #fff;
+        font-size: .9em;
+        width: 100%;
+    }
+
+    .device ul li dt {
+        color: #fff;
+        font-size: 1.8em;
+        margin-bottom: 7%;
+        width: 100%;
+    }
+    .device ul li dt .watch {
+        background: url(../img/img_watch.png) no-repeat;
+        width: 29px;
+        height: 45px;
+        display: inline-block;
+        margin-bottom: -15px;
+        margin-right: 5%;
+    }   
+    .device ul li dd {
+        display: inline-block;  
+        clear: both; 
+        width: 100%;
+        margin-top: 3%;
+    }
+    .device ul li dd span:first-of-type:after {
+        content: ' l ';
+    }
+
+    /*마이페이지*/
+    .mypage {
+        position: relative;   
+    }
+    .mypage h1 {
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 5% 5% 5% 12%;
+    }
+    .mypage .lsit_box dl {
+        border-top: 2px solid #282828 ; 
+        padding: 7% 5% 6% 5%;
+        border-bottom: 2px solid #282828 ;
+    }
+    .mypage .lsit_box dl dd:last-child {
+        margin-top: 1%;
+    } 
+    .mypage .lsit_box dl .photo {
+        border-radius: 50%;
+        background: gray;
+        width: 64px;
+        height: 64px;
+        display: inline-block;
+        float: left;
+        margin-right: 5%;
+        margin-top: -3%;
+        background: url(../img/img_photo.png) no-repeat;
+    }
+    .mypage .lsit_box dl dd .name {
+        font-size: 1.2em;
+    }
+    .mypage .lsit_box dl button {
+        float: right;
+        position: relative;
+        right: 0;
+        top: 0;
+        border-radius: 10px;
+        border: none;
+        background: lightgray;
+        font-size: .7em;
+        padding: 1%;
+    }
+    .mypage .set_list {
+    }
+    .mypage .set_list > li {
+        padding: 4% 5%;
+    }
+    .mypage .set_list > li span {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        margin-bottom: -2.3%;
+        margin-right: 1%;
+    }
+    .mypage .set_list > li:nth-of-type(1) span {
+        background: url(../img/ico_acount_setting.png) no-repeat;
+    }
+    .mypage .set_list > li:nth-of-type(2) span {
+        background: url(../img/ico_bluetooth.png) no-repeat;
+    }
+    .mypage .set_list > li:nth-of-type(3) span {
+        background: url(../img/ico_join.png) no-repeat;
+    }
+    .mypage .set_list > li:nth-of-type(4) span {
+        background: url(../img/ico_alarm.png) no-repeat;
+    }
+    .mypage .set_list > li:nth-of-type(5) span {
+        background: url(../img/ico_home.png) no-repeat;
+    }
+    .mypage .set_list > li:nth-of-type(6) span {
+        background: url(../img/ico_faq.png) no-repeat;
+    }
+    .mypage .set_list > li:nth-of-type(7) span {
+        background: url(../img/ico_bluetooth.png) no-repeat;
+    }
+
+    .mypage ul li:first-child,
+    .mypage ul li:nth-child(6) {
+        border-bottom: 1px solid #282828;
+    }
+    .mypage .device {
+        position:relative;
+    }
+    
+    .mypage .device ul li {
+        margin: 2% 0 2% 2%;
+        padding: 2%;
+    }
+}
+
+/*태블릿*/
+@media screen and (min-width: 769px) { 
+    /*헤더*/
+    .header {
+        position:absolute;
+        width: 35%;
+        top: 0;
+        padding: 2% 0 1% 0;
+        z-index:100;
+    }
+    .header .menu {
+        background: url(../img/ico_menu.png) no-repeat;
+        width: 32px;
+        height: 32px;
+        text-indent: -99999px;
+        display: inline-block;
+        margin-left: 3%;
+        border: none;
+    }
+    .header .prev {
+        background: url(../img/ico_arrow_left.png) no-repeat left 0;
+        width: 32px;
+        height: 40px;
+        cursor: pointer;
+        text-indent: -9999px;
+        display: inline-block;
+        border: none;
+        margin-top: -3px;
+        margin-left: 3%;
+    }
+    .header .setting  {
+        background: url(../img/ico_setting.png) no-repeat;
+        width: 32px;
+        height: 32px;
+        text-indent: -99999px;
+        float: right;
+        margin-right: 5%;
+        border: none;
+    }
+
+    /*메인화면*/
+    .main .contents button.logo {
+        background: url(../img/logo.png) no-repeat;
+        width: 178px;
+        height: 178px;
+        margin-top: 20%;
+        display: inline;
+        border: none;
+        cursor: pointer;
+    }
+
+    /*컨텐츠*/
+    .device {
+        position:absolute;
+        width: 35%;
+        top: 0;
+        background:gray;
+        opacity: 90%;
+        padding-top:7%;
+        height: 89%;
+    }
+    .device ul {
+        position: relative;
+        overflow:hidden;
+        width: 100%;
+        display: inline;
+        background: none;
+    }
+    .device ul li {
+        margin: 1% 0 1% 2%;
+        padding: 7% 5%;
+        border-radius: 10px;
+        background: #282828;
+        color: #fff;
+        font-size: .9em;
+        width: 85%;
+        display: inline-block;
+        overflow: hidden;
+    }
+    .device ul li dt {
+        color: #fff;
+        font-size: 1.5em;
+        margin-bottom: 10%;
+        width: 100%;
+    }
+    .device ul li dt .watch {
+        background: url(../img/img_watch.png) no-repeat;
+        width: 29px;
+        height: 45px;
+        display: inline-block;
+        margin-bottom: -15px;
+        margin-right: 5%;
+    }   
+    .device ul li dd {
+        display: inline-block;  
+        clear: both; 
+        width: 100%;
+        margin-top: 3%;
+    }
+    .device ul li dd span:first-of-type:after {
+        content: ' l ';
+    }
+    .device ul li:last-of-type{
+        width: 85%;
+        display: inline-block;
+        border-radius: 10px;
+        background: #282828;
+    }
+    .device ul li:last-of-type span {
+        text-align: center;
+        background: url(../img/btn_add.png) no-repeat;
+        width: 64px;
+        height: 64px;
+        display: block;
+        margin: 5% auto;
+    }
+    /*마이페이지*/
+    .mypage h1 {
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 5% 0 3% 0 ;
+    }
+    .mypage .prev {
+        background: url(../img/ico_arrow_left.png) no-repeat left 0;
+        width: 32px;
+        height: 40px;
+        cursor: pointer;
+        text-indent: -9999px;
+        display: inline-block;
+        border: none;
+    }
+    .lsit_box {
+        float: right;
+        width: 55%;
+        padding:0 5%;
+    }
+    .mypage dl {
+        padding: 7% 5% 6% 5%;
+        border-top: 2px solid #282828 ;
+        border-bottom: 2px solid #282828 ;
+    }
+    .mypage dl dd:last-child {
+        margin-top: 1%;
+    } 
+    .mypage dl .photo {
+        border-radius: 50%;
+        background: gray;
+        width: 64px;
+        height: 64px;
+        display: inline-block;
+        float: left;
+        margin-right: 5%;
+        margin-top: -3%;
+        background: url(../img/img_photo.png) no-repeat;
+    }
+    .mypage dl dd .name {
+        font-size: 1.2em;
+    }
+    .mypage dl button {
+        float: right;
+        position: relative;
+        right: 0;
+        top: 0;
+        border-radius: 10px;
+        border: none;
+        background: lightgray;
+        font-size: .7em;
+        padding: 1%;
+    }
+    .mypage .set_list {
+    }
+    .mypage .set_list > li {
+        padding: 4% 5%;
+    }
+    .mypage .set_list > li span {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        margin-bottom: -2.3%;
+        margin-right: 1%;
+    }
+    .mypage .set_list > li:nth-of-type(1) span {
+        background: url(../img/ico_acount_setting.png) no-repeat;
+    }
+    .mypage .set_list > li:nth-of-type(2) span {
+        background: url(../img/ico_bluetooth.png) no-repeat;
+    }
+    .mypage .set_list > li:nth-of-type(3) span {
+        background: url(../img/ico_join.png) no-repeat;
+    }
+    .mypage .set_list > li:nth-of-type(4) span {
+        background: url(../img/ico_alarm.png) no-repeat;
+    }
+    .mypage .set_list > li:nth-of-type(5) span {
+        background: url(../img/ico_home.png) no-repeat;
+    }
+    .mypage .set_list > li:nth-of-type(6) span {
+        background: url(../img/ico_faq.png) no-repeat;
+    }
+    .mypage .set_list > li:nth-of-type(7) span {
+        background: url(../img/ico_bluetooth.png) no-repeat;
+    }
+
+    .mypage ul li:first-child,
+    .mypage ul li:nth-child(6) {
+        border-bottom: 1px solid #282828;
+    }
+    .mypage .device {
+        position: absolute;
+        padding-top:7%;
+        height: 89%;`
+    }
+    .mypage .device ul li {
+        margin: 1% 0 1% 2%;
+        padding: 2% 5%;
+        border-radius: 10px;
+        background: #282828;
+        color: #fff;
+        font-size: .9em;
+        width: 85%;
+        display: inline-block;
+        overflow: hidden;
+    }
+}
