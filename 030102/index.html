@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스마트문화앱콘텐츠제작_김대은</title>
-    <link rel="apple-touch-icon" href="./img/icon_f.png">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type=“text/javascrpit”>
+        Var userAgent = navigator.userAgent.toLowerCase(); // 접속모바일 디자이스 정보
+        if(userAgent.match('iphone')) { 
+            document.write('<link rel="apple-touch-icon" href="./img/icon_f.png" />')
+            } 
+        else if(userAgent.match('ipad')) {
+            document.write('<link rel="apple-touch-icon" sizes="72*72" href="./img/icon_f.png" />')
+            } 
+        else if(userAgent.match('android')) {
+            document.write('<link rel="shortcut icon" href="./img/icon_f.png" />')
+            }
+    </script>
+
 </head>
 <body id="wrap_main" class="main" onclick="location.href='./sub/view.html'">
     <div class="header"></div>
