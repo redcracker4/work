@@ -1,0 +1,103 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+#wrap {
+    height: 100vh;
+}
+
+/*header*/
+.header {
+    background: #fff;
+    padding: 6% 4% 2% 4%;
+    overflow: hidden;
+    text-align: center;
+    width: 92%;
+}
+.header .btn_prev {
+    border: none;
+    background: url(../img/ico_prev.png) no-repeat;
+    background-size:90% ;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    float: left;
+}
+.header .btn_menu {
+    border: none;
+    background: url(../img/ico_menu.png) no-repeat;
+    background-size:90% ;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    float: right;
+}
+.header img {
+    vertical-align: baseline;
+    margin-top: -7px;
+}
+
+/*컨텐츠영역*/
+.contents {
+    width: 92%;
+    padding: 0 4%;
+}
+
+.main .search_box {
+    margin: 5% 0;
+    position: relative;
+}
+.main .search_box .input_search {
+    width: 96%;
+    padding: 4% 3%;
+    background: #efefef;
+    border: none;
+    border-radius: 5px;
+    color: #bdbdbd;
+}
+.main .search_box .btn_search {
+    background: url(../img/bnt_search.png) no-repeat right 5px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+.main dl {
+    padding: 5% 0;
+}
+.main dt {
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.main dd {
+    background: #e3e1e2;
+    border-radius: 5px;
+    width: 47%;
+    height: 100px;
+    margin-left: 6%;
+    float: left;
+    text-align: center;
+}
+.main dd:first-of-type {
+    margin-left: 0;
+}
+.main dd span.img_sample {
+    background: url(../img/img_category01.png) no-repeat;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-top: 18%;
+}
+
+/*푸터*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    visibility: hidden;
+}
