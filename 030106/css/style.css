@@ -1,0 +1,617 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+
+
+#wrap {
+    background-image: linear-gradient(#3b63ae, #32b8eb);
+    height: 100vh;
+}
+/*menu*/
+.menu {
+    position:fixed;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+
+}
+.menu {
+    overflow: auto;
+    bottom: 0;
+    background-color: rgba( 255, 255, 255, 0.3 );
+}
+.menu li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 2% 0;
+    display: inline-block;
+}
+
+.menu li:nth-child(1) {
+    background: url(../img/ico_home.png) no-repeat center 30%;
+    background-size: 25%;
+}
+.menu li:nth-child(2) {
+    background: url(../img/ico_report.png) no-repeat center 30%;
+    background-size: 25%;
+}
+.menu li:nth-child(3) {
+    background: url(../img/ico_heart.png) no-repeat center 30%;
+    background-size: 25%;
+}
+.menu li:nth-child(4) {
+    background: url(../img/ico_setting.png) no-repeat center 30%;
+    background-size: 25%;
+}
+.menu li a {
+    color: #fff;
+    display: inline-block;
+    padding-top: 40%;
+}
+
+
+
+/*컨텐츠영역*/
+.contents {
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+/*상단서브메뉴*/
+.contents .submenu {
+    padding: 5% 5% 3% 5%;
+    overflow: hidden;
+}
+.contents .submenu li {
+    width: 20%;
+    float: left;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 2%;
+    display: inline-block;
+    text-align: center;
+    line-height: 130%;
+    font-weight: lighter;
+}
+.contents .submenu li.on {
+    width: 15%;
+    float: left;
+    color: #59d16d;
+    font-size:1.8em;
+    line-height: 130%;
+    margin-top: -2.5%;
+    border-bottom: 3px solid #59d16d;
+    font-weight: normal;
+}
+.contents .check {
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    border-radius: 50%;
+    background: #59d16d;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    text-align: center;
+    line-height: 230%;
+}
+.tody_date {
+    display: inline-table;
+    width: 100%;
+    margin-top: 5%;
+}
+.tody_date dd {
+    float: left;
+    width: 33%;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+}
+.tody_date dd span {
+    display: inline-block;
+    width: 100%;
+    font-size: .5em;
+    color: #efefef;
+    font-weight: lighter;
+}
+/*그래프*/
+.graph {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+.graph span {
+    font-size: 4em;
+    color: #fff;
+    display: inline;
+    z-index: 1000;
+    position:absolute;
+    left: 35%;
+    top: 37%;
+    font-weight: bold;
+}
+.graph {
+    text-align: center;
+    margin: 3% 0 0 0;
+    overflow: hidden;
+}
+/*차트*/
+.chart {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transition: 0.3s;
+    background:#3892d0 ;
+    display:inline-block;
+    box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+}
+
+.chart:after{ /* 가상선택자는 도넛 모양을 만들기 위함이다.*/
+    content:'';
+    background: #3892d0;  /* 백그라운드 컬러로 중앙가리기 */
+    position: absolute;
+    top:50%; left:50%;
+    width:220px;
+    height:220px; /* 도넛의 너비 설정 */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%) inset;
+}
+.chart-bar{
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    background: conic-gradient(#52ba63 180deg, #000 180deg);/* 차트 설정 */
+}
+.bar {
+    width: 100%;
+    height: 40px;
+    background: #efefef;
+    margin-top: 5%;
+}
+.bar span.oversea {
+    background: #39c9e9;
+    display: inline;
+    width: 50%;
+    display: block;
+    float: left;
+    line-height: 250%;
+    text-align: center;
+    color: #fff;
+}
+.bar span.domestic {
+    background: #e34141;
+    display: inline;
+    width: 30%;
+    display: block;
+    float: left;
+    line-height: 250%;
+    text-align: center;
+    color: #fff;
+}
+.bar span.deposit {
+    background: #efefef;
+    display: inline;
+    width: 20%;
+    display: block;
+    float: left;
+    line-height: 250%;
+    text-align: center;
+}
+/*일일평균*/
+.average {
+    margin: 100% 5% 0 5%;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    width: 90%;
+}
+.average p {
+    color: #dbdbdb;
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+.average p span {
+    color: #fff;
+    padding-left: 3%;
+    font-weight:bolder;
+}
+.average ul {
+    margin-top: 2%;
+}
+.average ul li {
+    float: left;
+    width: 13.5%;
+    text-align: center;
+    color: #efefef;
+    font-size: 1em;
+    margin-right: .5%;
+}
+
+.average .graph {
+    margin-bottom: 10%;
+}
+/*차트*/
+/*절반*/
+.average .half .chart {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.3s;
+    background:#3ca3d9 ;
+    display:inline-block;
+    box-shadow:none;
+}
+.average .half .chart:after{ /* 가상선택자는 도넛 모양을 만들기 위함이다.*/
+    content:'';
+    background: #3ca3d9;  /* 백그라운드 컬러로 중앙가리기 */
+    position: absolute;
+    top:50%; left:50%;
+    width:35px;
+    height:35px; /* 도넛의 너비 설정 */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow:none;
+}
+.average .half .chart-bar{
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    background: conic-gradient(#52ba63 180deg, #000 180deg);/* 차트 설정 */
+}
+/*1/4*/
+.average .quarter .chart {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.3s;
+    background:#34a3dcs ;
+    display:inline-block;
+    box-shadow:none;
+}
+.average .quarter .chart:after{ /* 가상선택자는 도넛 모양을 만들기 위함이다.*/
+    content:'';
+    background: #3ca3d9;  /* 백그라운드 컬러로 중앙가리기 */
+    position: absolute;
+    top:50%; left:50%;
+    width:35px;
+    height:35px; /* 도넛의 너비 설정 */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow:none;
+}
+.average .quarter .chart-bar{
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    background: conic-gradient(#52ba63 90deg, #000 90deg);/* 차트 설정 */
+}
+/*전체*/
+.average .full .chart {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.3s;
+    background:#34a3dcs ;
+    display:inline-block;
+    box-shadow:none;
+}
+.average .full .chart:after{ /* 가상선택자는 도넛 모양을 만들기 위함이다.*/
+    content:'';
+    background: #3ca3d9;  /* 백그라운드 컬러로 중앙가리기 */
+    position: absolute;
+    top:50%; left:50%;
+    width:35px;
+    height:35px; /* 도넛의 너비 설정 */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow:none;
+}
+.average .full .chart-bar{
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    background: conic-gradient(#52ba63 360deg, #000 360deg);/* 차트 설정 */
+}
+/*별*/
+.average .star .chart {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.3s;
+    background:#3ca3d9 ;
+    display:inline-block;
+    box-shadow:none;
+}
+.average .star .chart:after{ /* 가상선택자는 도넛 모양을 만들기 위함이다.*/
+    content:'';
+    background: #52ba63 url(../img/ico_star.png) no-repeat 50%;  /* 백그라운드 컬러로 중앙가리기 */
+    background-size: 80%;
+    position: absolute;
+    top:50%; left:50%;
+    width:35px;
+    height:35px; /* 도넛의 너비 설정 */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow:none;
+}
+.average .star .chart-bar{
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    background: conic-gradient(#52ba63 360deg, #000 360deg);/* 차트 설정 */
+}
+.average .bar {
+    width: 100%;
+    height: 40px;
+    background: #efefef;
+    margin-top: 5%;
+}
+.average .bar span.oversea {
+    background: #35afe4;
+    display: inline;
+    width: 50%;
+    display: block;
+    float: left;
+    line-height: 250%;
+    text-align: center;
+    color: #fff;
+}
+.average .bar span.domestic {
+    background: #e34141;
+    display: inline;
+    width: 30%;
+    display: block;
+    float: left;
+    line-height: 250%;
+    text-align: center;
+    color: #fff;
+}
+.average .bar span.deposit {
+    background: #efefef;
+    display: inline;
+    width: 20%;
+    display: block;
+    float: left;
+    line-height: 250%;
+    text-align: center;
+}
+
+
+/*건강*/
+.health {
+    padding:7% 5%;
+}
+.health h1 {
+    font-size: 1.7em;
+    color: #fff;
+    font-weight: lighter;
+}
+.weight_graph {
+    border-radius: 10px;
+    background-color: rgba( 255, 255, 255, 0.3 );
+    width: 86%;
+    margin-top: 5%;
+    padding: 5% 2%;
+    overflow: hidden;
+}
+.weight_graph dt {
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: #fff;
+    margin-bottom: 5%;
+}
+.weight_graph button {
+    color: #57f070;
+    font-size: 1.1em;
+    font-weight: lighter;
+    background: none;
+    border: none;
+    float: right;
+}
+.weight_graph dd {
+    float: left;
+    color: #fff;
+    font-size: 2em;
+    width: 49%;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10%;
+}
+.weight_graph dd span {
+    display: inline-block;
+    font-size: .5em;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%;
+    font-weight: lighter;
+}
+.weight_graph dd:nth-last-child(2) span:last-child {
+    border-radius: 5px;
+    background: #52ba63;
+    width: 30%;
+    height: 14px;
+    font-size: .8em;
+}
+.weight_graph dd:last-of-type {
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    padding: 0;
+}
+
+.line_graph {
+    height: 30vh;
+    background: url(../img/img_graph.png) no-repeat;
+    background-size: 100%;
+}
+
+.bmi_graph {
+    width: 90%;
+    margin-top: 5%;
+}
+.bmi_graph h3 {
+    color: #efefef;
+    font-weight: lighter;
+    font-size: 1.8em;
+}
+.bmi_graph h3 span {
+    font-weight: bold;
+}
+/*가로바그래프*/
+.row {
+    display: flex;
+    align-items: stretch;
+    padding-top: 5%;
+  }
+  .row .bar-container {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  
+  .row .bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1px;
+  }
+  
+  .val-a { background: #252a32 }
+  .val-b { background: #5a6b87 }
+  .val-c { background: #67ae74 }
+  .val-d { background: #e5df47 }
+  .val-e { background: #e58824 }
+  .val-f { background: #e42529 }
+
+
+/*툴팁*/
+.tooltip {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+}
+.tooltip .tooltip-content {
+    visibility:visible;
+    width: 50px;
+    background-color: #52ba63;
+    border-radius: 5px;
+    padding: 2% 1% 1% 1%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 0;
+    margin-left: -50px;
+}
+.tooltip .tooltip-content::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #52ba63 transparent transparent transparent;
+}
+.tooltip:hover .tooltip-content { visibility: visible; }
+
+
+/*지도보기*/
+.view img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.view .search {
+    padding: 7% 5%;
+    margin-bottom: 10%;
+    width: 90%;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.view .search button.btn_menu {
+    background: #fff;
+    padding:3%;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position:absolute;
+    left: 5%;
+}
+.view .search input.searchbox {
+    background: #fff;
+    border: none;
+    padding: 4% 4% 4% 15%;
+    float: left;
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+}
+.view .search button.location {
+    float: right;
+    padding: 3%;
+    background : blue;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+}
+
+
+/* 토글 */
+.toggle {
+    position: relative;
+    float: right;
+    right: 7%;
+    top: 40%;
+    z-index: 100;
+}
+.toggleSwitch {
+    width: 40px;
+    height: 80px;
+    display: block;
+    position: relative;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+    cursor: pointer;
+  }
+   /* 토글 버튼 */
+  .toggleSwitch .toggleButton {
+    /* 버튼은 토글보다 작아야함  */
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 70%;
+    left: 4px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #f03d3d;
+  }
+
+/*푸터*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    visibility: hidden;
+}
