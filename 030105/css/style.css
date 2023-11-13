@@ -1,0 +1,42 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+
+/*header*/
+#wrap {
+    
+    background: lightgray;
+    padding:0;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    display: none;
+}
+
+
+
+/*컨텐츠영역*/
+.contents {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.contents p {
+    text-align: center;
+    margin-top: 80%;
+    font-size: 1.3em;
+}
+
+/*푸터*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    visibility: hidden;
+}
