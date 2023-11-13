@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트문화앱콘텐츠제작_박시현</title>
+
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("value");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+        }
+    </script>
+</head>
+<body id="wrap">
+    <div class="header">
+
+    </div>
+    <div class="contents step">
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+        <ul class="question">
+            <li>
+                <p><span>1/13</span>내가 주말에 선호하는 것은?</p>
+                <button type="button">집에서 나만의 시간 보내기</button>
+                <button type="button">밖에서 나가서 신나게 놀기</button>
+            </li>
+            <li class="hidden">
+                <p><span>2/13</span>내가 주말에 선호하는 것은?</p>
+                <button type="button">집에서 나만의 시간 보내기</button>
+                <button type="button">밖에서 나가서 신나게 놀기</button>
+            </li>
+        </ul>
+    </div>
+    
+    
+    
+</body>
+
+</html>
