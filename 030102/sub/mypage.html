@@ -9,6 +9,19 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        var mySwiper = new Swiper ('.swiper', {
+            autoplay: false,
+            loop: true,
+        });
+    });
+    </script>
+    <!-- swiper -->
+    
 </head>
 <body id="wrap">
     <div class="header">
@@ -37,36 +50,40 @@
             </ul>
         </div>
         <div class="device">
-            <ul>
-                <li>
-                    <dl>
-                        <dt><span class="watch"></span>Galaxy Watch6</dt>
+            <div class="swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <dl>
+                            <dt><span class="watch"></span>Galaxy Watch6</dt>
+                            <dd>
+                                <span>위치1</span>
+                                <span>경기도 부천시 조마루로 15</span>
+                            </dd>
+                            <dd>
+                                <span>마지막 신호연결</span>
+                                <span>10월 23일 15:01</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="swiper-slide">
+                        <dl>
+                        <dt>Galaxy Watch6</dt>
                         <dd>
-                            <span>위치</span>
+                            <span>위치2</span>
                             <span>경기도 부천시 조마루로 15</span>
                         </dd>
                         <dd>
                             <span>마지막 신호연결</span>
                             <span>10월 23일 15:01</span>
                         </dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                    <dt>Galaxy Watch6</dt>
-                    <dd>
-                        <span>위치</span>
-                        <span>경기도 부천시 조마루로 15</span>
-                    </dd>
-                    <dd>
-                        <span>마지막 신호연결</span>
-                        <span>10월 23일 15:01</span>
-                    </dd>
-                    </dl>
-                </li>
-                <li><span></span></li>
-            </ul>
-            </div>
+                        </dl>
+                    </li>
+                    <li class="swiper-slide">
+                        <span></span>
+                    </li>
+                </ul>
+                </div>
+        </div>
     </div>
 
     <!-- footer-->
