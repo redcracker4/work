@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트문화앱콘텐츠제작_이인성</title>
+
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script> 
+        var userAgent = navigator.userAgent.toLowerCase(); // 접속 핸드폰 정보 
+           
+        // 모바일 홈페이지 바로가기 링크 생성 
+        if(userAgent.match('iphone')) { 
+            document.write('<link rel="apple-touch-icon" href="./img/icon_logo.png" />') 
+        } else if(userAgent.match('ipad')) { 
+            document.write('<link rel="apple-touch-icon" sizes="72*72" href="./img/icon_logo.png" />') 
+        } else if(userAgent.match('ipod')) { 
+            document.write('<link rel="apple-touch-icon" href="./img/icon_logo.png" />') 
+        } else if(userAgent.match('android')) { 
+            document.write('<link rel="shortcut icon" href="./img/icon_logo.png" />') 
+        } 
+    </script>
+</head>
+<body id="wrap">
+    <div class="header">
+        <h1>재테크 챌린지</h1>
+    </div>
+    <div class="contents main">
+        <div class="graphbox">
+            <p>고객님의 자산<br>18,239,098</p>
+            <div class="graph">
+                <div class="chart">
+                    <div class="chart-bar" data-deg="50"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bar">
+            <span class="oversea">해외주식</span>
+            <span class="domestic">국내주식</span>
+            <span class="deposit">예수금</span>
+        </div>
+        <ul class="group">
+            <li><span class="type01"></span>Alphabet Inc</li>
+            <li><span class="type02"></span>POSCO</li>
+            <li><span class="type03"></span>Coupang</li>
+            <li><span class="type04"></span>3M</li>
+        </ul>
+    </div>
+    <div class="footer">
+        footer
+    </div>
+</body>
+
+</html>
