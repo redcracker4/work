@@ -1,8 +1,7 @@
-@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 body {
     height: 100%;
 }
-
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 /*header*/
 #wrap {
     background: #ffdbf0;
