@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 body {
-    height: 100vh;
+    height: 100%;
 }
 
 /*header*/
 #wrap {
     background: #ffdbf0;
-    height: 100%;
+    height: 100vh;
 }
 .header {
     background: #fff;
