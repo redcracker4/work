@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대왕이</title>
 
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script> 
+        var userAgent = navigator.userAgent.toLowerCase(); // 접속 핸드폰 정보 
+           
+        // 모바일 홈페이지 바로가기 링크 생성 
+        if(userAgent.match('iphone')) { 
+            document.write('<link rel="apple-touch-icon" href="./img/icon_logo.png" />') 
+        } else if(userAgent.match('ipad')) { 
+            document.write('<link rel="apple-touch-icon" sizes="72*72" href="./img/icon_logo.png" />') 
+        } else if(userAgent.match('ipod')) { 
+            document.write('<link rel="apple-touch-icon" href="./img/icon_logo.png" />') 
+        } else if(userAgent.match('android')) { 
+            document.write('<link rel="shortcut icon" href="./img/icon_logo.png" />') 
+        } 
+    </script>
+</head>
+<body id="wrap">
+    <div class="header">
+        <ul>
+            <li><a href="">홈</a></li>
+            <li><a href="">검색</a></li>
+            <li><button type="button">+</button></li>
+            <li><a href="">챗팅</a></li>
+            <li><a href="">마이</a></li>
+        </ul>
+    </div>
+    <div class="contents main">
+        <p>대왕이</p>
+        <span>대중교통의 왕!</span>
+        <img src="./img/img_bus.png" />
+        <button type="button" class="start">시작하기</button>
+    </div>
+    <div class="footer">
+        footer
+    </div>
+</body>
+
+</html>
