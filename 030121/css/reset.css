@@ -42,12 +42,6 @@ table {
 	border-spacing: 0;
 }
 
-a {color:#000;}
-a:link, a:visited {
-	color: #000; 
-	text-decoration: none;
-}
-a:hover, a:focus, a:active {
-	color: 	brown; 
-	text-decoration: none; 
-	background: #fff;}
+a {color:#fff;}
+a:link, a:visited {color: #fff; text-decoration: none;}
+a:hover, a:focus, a:active {color: yellow; text-decoration: none; }
