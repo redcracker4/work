@@ -1,0 +1,263 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*header*/
+#wrap {
+    padding: 5% 4%;
+}
+.header {
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+/*컨텐츠영역*/
+.contents {
+    width: 100%;
+}
+.map {
+    background: #efefef;
+    height: 300px;
+    text-align: center;
+}
+.btn_area {
+    width: 100%;
+    display: inline-block;
+}
+.btn_area button.btn_next {
+    float: right;
+    margin:5% 0;
+    border-radius: 5px;background:#efefef;
+    border: none;
+    width: 100%;
+    padding: 3% 0;
+    cursor: pointer
+}
+.title {
+    width: 96%;
+    background: lightgray;
+    padding: 2%;
+    font-weight: bold;
+    overflow: auto;
+}
+.title h4 {
+    float: left;
+    font-size: 1em;
+    font-weight: lighter;
+    padding-top: 5px;
+}
+.title .step {
+    float: right;
+    font-size: .8em;
+    font-weight: normal;
+    width: 15%;
+}
+.title .step li {
+    display: inline-block;
+    padding: 5% 6% 0 6%;
+    line-height: 150%;
+    float: left;
+}
+.title .step li.on {
+    background: gray;
+    color: #fff;
+}
+.photo {
+    background: #8f4141;
+    height: 200px;
+}
+.caption {
+    background: lightgray;
+    height: 30px;
+    font-size: .8em;
+    text-align: center;
+    line-height: 150%;
+}
+
+.cafe_list {
+    margin: 5% 0;
+}
+.cafe_list dd {
+    padding: 2%;
+}
+/*체크박스*/
+input#list1,
+input#list2,
+input#list3,
+input#list4 {
+    display:none;
+}
+
+input#list1 + label,
+input#list2 + label,
+input#list3 + label,
+input#list4 + label {
+    cursor:pointer;
+}
+
+input#list1 + label > span,
+input#list2 + label > span,
+input#list3 + label > span,
+input#list4 + label > span {
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+input#list1 + label:before,
+input#list2 + label:before,
+input#list3 + label:before,
+input#list4 + label:before {
+    content:"";
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background: url('../img/checkbox.png') no-repeat;
+    background-size: 100%;
+    margin-bottom: -4px;
+}
+input#list1:checked + label:before,
+input#list2:checked + label:before,
+input#list3:checked + label:before,
+input#list4:checked + label:before {
+    content:"";
+    width:20px;
+    height:20px;
+    background: url('../img/checked.png') no-repeat;
+    background-size: 100%;
+}
+
+/*좌석선택*/
+.seat {
+    padding-top:10%;
+}
+.seat h4 {
+    margin-bottom: 2%;
+}
+.seat_no {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    overflow: auto;
+    padding: 5% 0;
+
+}
+.seat_no li {
+    float: left;
+    border: 1px solid #e2dcdc;
+    width: 12%;
+    height: 50px;
+    margin: 3% 0;
+    margin-left:10%;
+    padding:1%;
+}
+.seat_no li:first-child,
+.seat_no li:nth-child(5),
+.seat_no li:nth-child(9),
+.seat_no li:nth-child(13) {
+    width: 12%;
+    margin-left: 6%;
+}
+.seat_no li.checked {
+    background: #e2dcdc;
+}
+.description {
+    padding : 5% 0;
+}
+.description p {
+    font-size: .7em;
+    display: inline;
+}
+.description p span {
+    color : #e2dcdc;
+}
+
+.search_box {
+    position: relative;
+    left: 0;
+    text-outline: 0 0 #000;
+
+}
+.search_box label {
+    font-size: 1.3em;
+    font-weight: bold;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 3%;
+}
+.search_box input.input_add {
+    background: #efefef;
+    border: none;
+    border-radius: 5px;
+    padding: 3% 4%;
+    width: 90%;
+    margin-bottom: 10%;
+    color: #bdbdbd;
+}
+.search_box button.btn_search {
+    background: url(../img/bnt_search.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    float: right;
+    position: absolute;
+    right: 3%;
+    top:33%;
+    border: none;
+    display: inline-block;
+    text-indent: -9999px;
+    cursor: pointer
+}
+
+.time>h4 {
+    margin: 5% 0 2% 0;
+    font-weight: bold;
+
+}
+.time>h4::before {
+    content: '{ ';
+}
+.time>h4::after {
+    content: ' }';   
+}
+
+.time dl {
+    margin: 3% 0;
+    display: inline-block;
+    width: 100%;
+}
+.time dl dt {
+    font-size: .8em;
+}
+.time dl dd {
+    border: 1px solid gray;
+    padding: 2%;
+    width: 27.5%;
+    margin: 2% 0 0 2%;
+    float: left;
+    text-align: center;
+    font-size: .8em;
+} 
+.time dd:nth-of-type(1),
+.time dd:nth-of-type(4),
+.time dd:nth-of-type(7) {
+    margin: 2% 0 0 0;
+}
+.time button.btn_more {
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 2%;
+    border: none;
+    cursor: pointer;
+}
+.time button.btn_card {
+    width: 100%;
+    padding: 2%;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*푸터*/
+.footer {
+    background: #efefef;
+    height: 50px;
+    visibility: hidden;
+}
