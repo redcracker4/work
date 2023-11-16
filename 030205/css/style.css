@@ -17,6 +17,7 @@
     display: block;
     padding-left: 3%;
     float: left;
+    font-family: 'Noto Seritf KR', serif;
 }
 .header .month .btn_calendar_view {
     font-size: .8em;
