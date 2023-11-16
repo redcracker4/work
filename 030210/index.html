@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="./css/reset.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
-    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script> 
         var userAgent = navigator.userAgent.toLowerCase(); // 접속 핸드폰 정보 
            
@@ -26,21 +26,18 @@
 <body id="wrap">
     <div class="header">
         <ul>
-            <li><a href="">홈</a></li>
-            <li><a href="">검색</a></li>
-            <li><button type="button">+</button></li>
-            <li><a href="">챗팅</a></li>
-            <li><a href="">마이</a></li>
+            <li><a href="#">홈</a></li>
+            <li><a href="./sub/search.html">검색</a></li>
+            <li><button type="button" class="plus">+</button></li>
+            <li><a href="#">챗팅</a></li>
+            <li><a href="#">마이</a></li>
         </ul>
     </div>
     <div class="contents main">
         <p>대왕이</p>
         <span>대중교통의 왕!</span>
-        <img src="./img/img_bus.png" />
-        <button type="button" class="start">시작하기</button>
-    </div>
-    <div class="footer">
-        footer
+        <div class="logo"></div>
+        <button type="button" class="start"  onclick="location.href='./sub/login.html'">시작하기</button>
     </div>
 </body>
 
