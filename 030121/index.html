@@ -3,117 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>건강재산</title>
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link type="text/css" rel="stylesheet" href="css/rest.css">
-    <link rel="icon" href="images/icon.png" >
-</head>
-<body>
-    <div id="wrap">
-        <!-- header -->
-    <header id="header">
-        <div class="display">
-            <a href="#"><img id="icon" src="images/icon.png" height="72px" alt=""></a>
-             <a href="#"><img id="logo" src="images/건강재산.png" height="60px" alt=""></a>
-        </div>
-        <nav class="nav">
-            <ul class="clearfix">
-             <li><a href="#">건강</a>
-                <ul class="menu">
-                    <li><a href="#">상태</a></li>
-                    <li><a href="#">운동 미션</a></li>
-                </ul>
-            </li>
-            <li><a href="#">커뮤니티</a>
-                <ul class="menu">
-                    <li><a href="#">게시물</a></li>
-                    <li><a href="#">알림</a></li>
-                </ul>
-            </li>
-            <li class="shop"><a href="#"><img src="images/shop.png" height="50px"> </a>
-                <ul class="menu">
-                    <li><a href="#">코인</a></li>
-                    <li><a href="#">현금</a></li>
-                </ul>
-            </li>
-            </ul>
+    <title>스마트문화앱콘텐츠제작_이인성</title>
 
-            <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
-            <script src="script/custom.js" ></script>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-                <script>
-                 $(".nav > ul > li").mouseover(function(){
-                     $(this).find(".menu").stop().slideDown(200);
-                 });
-                 $(".nav > ul > li").mouseout(function(){
-                     $(this).find(".menu").stop().slideUp(200);
-                 });
-                </script>
-        </nav>
-    </header>
-    <div class="top_area">
-        <img class="coin" src="images/coin.png" >
-        <span class="point" style="padding: 10px;">2000</span>
-        <img class="profile" src="images/profile.png" >
-    </div>
-    <section>
-        <!-- section 1 -->
-        <h1>오늘의 미션</h1>
-        <div class="container">
-        <div class="mission" style="border: 2px solid;">
-         <div class="final">
-            <p>2km 걷기</p>
-            <img class="coin" src="images/coin.png" >
-            <p>1000</p>
-         </div>
-         <div class="finish" >
-            <a class="complete" href="#" style="border:2px solid">수락</a>
-            <a class="complete" href="#" style="border:2px solid">받기</a>
-         </div>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script> 
+        var userAgent = navigator.userAgent.toLowerCase(); // 접속 핸드폰 정보 
+           
+        // 모바일 홈페이지 바로가기 링크 생성 
+        if(userAgent.match('iphone')) { 
+            document.write('<link rel="apple-touch-icon" href="./img/icon_logo.png" />') 
+        } else if(userAgent.match('ipad')) { 
+            document.write('<link rel="apple-touch-icon" sizes="72*72" href="./img/icon_logo.png" />') 
+        } else if(userAgent.match('ipod')) { 
+            document.write('<link rel="apple-touch-icon" href="./img/icon_logo.png" />') 
+        } else if(userAgent.match('android')) { 
+            document.write('<link rel="shortcut icon" href="./img/icon_logo.png" />') 
+        } 
+    </script>
+</head>
+<body id="wrap">
+    <div class="header">
+        <h1>재테크 챌린지</h1>
+        <ul>
+            <li><a href="">마이자산</a></li>
+            <li><a href="./sub/event.html">이벤트</a></li>
+        </ul>
         </div>
-        <div class="mission" style="border: 2px solid;">
-            <div class="final">
-               <p>스쿼트 10회</p>
-               <img class="coin" src="images/coin.png" >
-               <p>300</p>
+    <div class="contents main">
+        <div class="graphbox">
+            <p>고객님의 자산<br>18,239,098</p>
+            <div class="graph">
+                <div class="chart">
+                    <div class="chart-bar" data-deg="50"></div>
+                </div>
             </div>
-            <div class="finish" >
-               <a class="complete" href="#" style="border:2px solid">수락</a>
-               <a class="complete" href="#" style="border:2px solid">받기</a>
-            </div>
-           </div>
-           <div class="mission" style="border: 2px solid;">
-            <div class="final">
-               <p>윗몸 일으키기 20회</p>
-               <img class="coin" src="images/coin.png" >
-               <p>500</p>
-            </div>
-            <div class="finish" >
-               <a class="complete" href="#" style="border:2px solid">수락</a>
-               <a class="complete" href="#" style="border:2px solid">받기</a>
-            </div>
-           </div>
         </div>
-        <!-- section 2 -->
-        <h1>게시물</h1>
-        <div class="community">
-            <img class="img" src="images/unsplash_kcRFW-Hje8Y.jpg">
-            <img class="img" src="images/unsplash_lrQPTQs7nQQ.jpg">
+        <div class="bar">
+            <span class="oversea">해외주식</span>
+            <span class="domestic">국내주식</span>
+            <span class="deposit">예수금</span>
         </div>
-        <h1 id="coin">코인</h1>
-        <div class="change">
-            <img src="images/coin_money.png" width="50%" height="auto">
-            <a href="#"><img src="images/교환.png" width="50%" height="50%"></a>
-        </div>
-      <div class="menubar">
-        <a href="#"><img src="images/home.png" alt="이미지"></a>
-        <a href="#"><img src="images/shop.png" alt="이미지"></a>
-        <a href="#"><img src="images/post.png" alt="이미지"></a>
-        <a href="#"><img src="images/seeting.png" alt="이미지"></a>
-      </div>
-      </section>
-      <footer>
-    </footer>
+        <ul class="group">
+            <li><span class="type01"></span>Alphabet Inc</li>
+            <li><span class="type02"></span>POSCO</li>
+            <li><span class="type03"></span>Coupang</li>
+            <li><span class="type04"></span>3M</li>
+        </ul>
     </div>
 </body>
+
 </html>
