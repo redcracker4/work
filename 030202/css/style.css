@@ -1,1 +1,71 @@
+/*header*/
+#wrap {
+    padding: 5% 0;
+}
+.header {
+    margin: 4% 4% 0 4%;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid lightgray;
+    overflow: auto;
+}
+.header h1 {
+    font-size: 2rem;
+    line-height: 150%;
+    font-weight: bold;
+    float: left;
+}
+.header>span {
+    float: right;
+}
 
+
+/*컨텐츠영역*/
+.contents {
+    width: 92%;
+    margin: 0 4% 4% 4%;
+}
+
+.month {
+    overflow:auto;
+}
+.month li {
+    float: left;
+    margin-top: 7%;
+}
+.jan, .feb, .mar,
+.apr, .may, .june,
+.july, .aug, .sep,
+.ocb, .nov, .dec {
+    width: 33%;
+}
+.feb, .mar,
+.may, .june
+.nov, .dec {
+    margin-left: .5%;
+}
+
+.month h5 {
+    line-height: 150%;
+    width: 95%;
+    padding: 0 0 0 5%;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.month ul {
+    padding: 0 0 3% 0 ;
+    overflow: auto;
+}
+.month ul li {
+    width: 13%;
+    line-height: 120%;
+    float: left;
+    font-size: .7rem;
+    text-align: center;
+}
+
+
+/*푸터*/
+.footer {
+
+}
