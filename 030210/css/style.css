@@ -212,9 +212,3 @@
     border: none;
     background: none;
 }
-
-/*푸터*/
-.footer {
-    height: 50px;
-    visibility: hidden;
-}
