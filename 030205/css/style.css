@@ -1,5 +1,45 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
 
+/*main*/
+.main {
+    padding-top: 20%;
+}
+
+.main p.time{
+    font-size: 2.5em;
+    width: 100%;
+    text-align: center;
+}
+.main span {
+    font-size:1em;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.main div {
+    width: 100%;
+    text-align: center;
+}
+ .main div img {
+    margin: 5% auto;
+    text-align: center;
+}
+.main p {
+    width: 100%;
+    text-align: center;
+    margin: 5% 0;
+}
+.main .btnarea {
+    width: 100%;
+}
+.main .btn_area button {
+    border-radius: 15px;
+    background: #f6d2f6;
+    padding: 1% 5%;
+    border: none;
+    color: #625463;
+}
+
 /*header*/
 .header {
     width: 100%;
