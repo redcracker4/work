@@ -14,7 +14,9 @@ body {
     bottom: 0;
     border-top: 1px solid #d9bacc;
     width: 100%;
-    padding:5% 0 10% 0;
+    padding:5% 0 3% 0;
+    box-shadow: 5px 5px 5px 5px gray;
+    z-index: 100;
 }
 .header li {
     width: 20%;
@@ -22,15 +24,14 @@ body {
     text-align: center;
 }
 .header li button.plus {
-    background: #ff8cce;
+    background:url(../img/btn_plus.png) no-repeat;
+    background-size: 100%;
     color: #fff;
     border: none;
-    border-radius: 30px;
-    padding: 2% 5%;
     width: 50px;
     height: 30px;
-    font-size: 1.5em;
     margin-top: -5px;
+    cursor: pointer;
 }
 
 /*컨텐츠영역*/
