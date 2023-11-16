@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트메이트</title>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script> 
+        var userAgent = navigator.userAgent.toLowerCase(); // 접속 핸드폰 정보 
+           
+        // 모바일 홈페이지 바로가기 링크 생성 
+        if(userAgent.match('iphone')) { 
+            document.write('<link rel="apple-touch-icon" href="./img/icon_f.png" />') 
+        } else if(userAgent.match('ipad')) { 
+            document.write('<link rel="apple-touch-icon" sizes="72*72" href="./img/icon_f.png" />') 
+        } else if(userAgent.match('ipod')) { 
+            document.write('<link rel="apple-touch-icon" href="./img/icon_f.png" />') 
+        } else if(userAgent.match('android')) { 
+            document.write('<link rel="shortcut icon" href="./img/icon_f.png" />') 
+        } 
+        </script>
+</head>
+<body id="wrap" onload="initialize()">
+    <div class="header">
+    </div>
+
+    <div class="contents search">
+        <div class="search_box">
+            <label>내 위치 찾기</label>
+            <input type="text" class="input_add" value="주소입력"/>
+            <button type="button" class="btn_search">검색</button>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1625837601914!2d126.74256737540546!3d37.50408337205484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7d0f6889a31d%3A0x4011f5738b664fa3!2z6rK96riw64-EIOu2gOyynOyLnCDsobDrp4jro6jroZwgMTU!5e0!3m2!1sko!2skr!4v1699183197433!5m2!1sko!2skr" width="100%" height="99%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <span class="btn_area">
+            <button type="button" class="btn_next" onclick="location.href='./sub/list.html'">다음</button>
+        </span>
+    </div>
+
+    <div class="footer">
+        footer
+    </div>
+</body>
+
+</html>
