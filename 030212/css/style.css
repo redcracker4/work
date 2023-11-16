@@ -45,8 +45,9 @@
 .header ul li a:hover, 
 .header ul li a:focus, 
 .header ul li a:active {
-    color: yellow; 
+    color: #f7ffb3; 
     text-decoration: none;
+    background: none;
 }
 
 
@@ -196,7 +197,7 @@
     line-height: 180%;
 }
 .event .box.mint p {
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: #fff;
     line-height: 150%;
 }
@@ -206,12 +207,13 @@
 }
 .event .box button {
     position:absolute;
-    right: 10%;
+    right: 5%;
     bottom: 10%;
     border-radius: 30px;
     border: none;
-    padding:2% 5%;
+    padding:1% 5%;
     font-size: 1.2em;
+    font-style: italic;
 }
 .event .box.olive button {
     background: #caa935;
