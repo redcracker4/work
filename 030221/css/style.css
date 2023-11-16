@@ -34,7 +34,8 @@ button {
     border: none;
     width: 100%;
     padding: 3% 0;
-    cursor: pointer
+    cursor: pointer;
+    color:#333;
 }
 .btn_area button.btn_next:active,
 .btn_area button.btn_next:hover,
@@ -58,15 +59,15 @@ button {
     font-weight: lighter;
     padding-top: 5px;
     font-weight: bold;
+    float: left;
 }
 /*step*/
 .step {
     float: right;
     font-size: .8em;
     font-weight: normal;
-    width: 25%;
     margin-top: 3px;
-    float: right;
+    width: 80px;
 }
 .step li button {
     display: inline-block;
@@ -114,6 +115,8 @@ button {
 }
 .cafe_list dd {
     padding: 2%;
+    background: #efefef;
+    margin-bottom: 2px;
 }
 /*체크박스*/
 input#list1,
@@ -278,12 +281,6 @@ input#list4:checked + label:before {
     margin: 10% 0 2% 0;
     font-weight: bold;
 
-}
-.time>h4::before {
-    content: '{ ';
-}
-.time>h4::after {
-    content: ' }';   
 }
 
 .time dl {
