@@ -1,5 +1,10 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
+button { 
+    color: #333;
+}
+
+
 /*header*/
 #wrap {
     padding: 5% 4%;
@@ -21,6 +26,7 @@
     width: 100%;
     display: inline-block;
 }
+
 .btn_area button.btn_next {
     float: right;
     margin:5% 0;
@@ -30,6 +36,15 @@
     padding: 3% 0;
     cursor: pointer
 }
+.btn_area button.btn_next:active,
+.btn_area button.btn_next:hover,
+.btn_area button.btn_next:focus {
+  color: #333;
+}
+.btn_area button.btn_next:disabled {
+  opacity: 0.5;
+}
+
 .title {
     width: 96%;
     background: lightgray;
