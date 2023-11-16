@@ -8,9 +8,6 @@
     display: inline-block;
     width: 100%;
 }
-
-
-
 /*컨텐츠영역*/
 .contents {
     width: 100%;
@@ -42,38 +39,61 @@
 }
 .title h4 {
     float: left;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: lighter;
     padding-top: 5px;
+    font-weight: bold;
 }
-.title .step {
+/*step*/
+.step {
     float: right;
     font-size: .8em;
     font-weight: normal;
-    width: 15%;
+    width: 18%;
+    border: 1px soid green;
+    margin-top: 3px;
 }
-.title .step li {
+.step li button {
     display: inline-block;
-    padding: 5% 6% 0 6%;
     line-height: 150%;
     float: left;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
-.title .step li.on {
+.step li button:active,
+.step li button:hover,
+.step li button:focus {
+    background: #bdbdbd;
+}
+.title .step li button:disabled {
+  opacity: 0.5;
+}
+
+.step li button.on {
     background: gray;
     color: #fff;
 }
-.photo {
-    background: #8f4141;
-    height: 200px;
+.step li button.on:active,
+.step li button.on:hover,
+.step li button.on:focus {
+  background:#333;
 }
-.caption {
-    background: lightgray;
-    height: 30px;
-    font-size: .8em;
-    text-align: center;
-    line-height: 150%;
+.step li button.on:disabled {
+  opacity: 0.5;
 }
 
+/*사진*/
+.photo {
+    overflow: hidden;
+}
+.photo img {
+    width: 100%;
+}
+/*리스트*/
 .cafe_list {
     margin: 5% 0;
 }
@@ -102,7 +122,6 @@ input#list4 + label > span {
     vertical-align: middle;
     padding-left: 5px;
 }
-
 input#list1 + label:before,
 input#list2 + label:before,
 input#list3 + label:before,
@@ -159,6 +178,7 @@ input#list4:checked + label:before {
 .seat_no li.checked {
     background: #e2dcdc;
 }
+/*설명*/
 .description {
     padding : 5% 0;
 }
@@ -169,7 +189,7 @@ input#list4:checked + label:before {
 .description p span {
     color : #e2dcdc;
 }
-
+/*검색*/
 .search_box {
     position: relative;
     left: 0;
@@ -205,7 +225,7 @@ input#list4:checked + label:before {
     text-indent: -9999px;
     cursor: pointer
 }
-
+/*시간*/
 .time>h4 {
     margin: 5% 0 2% 0;
     font-weight: bold;
@@ -253,8 +273,6 @@ input#list4:checked + label:before {
     border: none;
     cursor: pointer;
 }
-
-
 /*푸터*/
 .footer {
     background: #efefef;
