@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>스마트문화앱콘텐츠제작_한진희</title>
-
+    <title>스마트메이트:시간선택하기</title>
     <link rel="stylesheet" href="../css/reset.css"/>
     <link rel="stylesheet" href="../css/style.css"/>
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-
 </head>
 <body id="wrap">
     <div class="header">
@@ -17,10 +15,10 @@
         <div class="title">
             <h4>진행단계</h4>
             <ul class="step">
-                <li>1</li>
-                <li>2</li>
-                <li class="on">3</li>
-                <li>4</li>
+                <li><button type="button">1</button></li>
+                <li><button type="button">2</button></li>
+                <li><button type="button" class="on">3</button></li>
+                <li><button type="button">4</button></li>
             </ul>
         </div>
         
@@ -50,7 +48,7 @@
         <button type="button" class="btn_card">카드사 선택</button>
         
         <span class="btn_area">
-            <button type="button" class="btn_next">다음</button>
+            <button type="button" class="btn_next" onclick="location.href='./sub/check.html'">다음</button>
         </span>
     </div>
     <div class="footer">
