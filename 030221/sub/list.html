@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>스마트메이트:선택하기</title>
+    <title>스마트메이트:스터디카페선택하기</title>
     <link rel="stylesheet" href="../css/reset.css"/>
     <link rel="stylesheet" href="../css/style.css"/>
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-
 </head>
 <body id="wrap">
     <div class="header">
@@ -16,16 +15,13 @@
         <div class="title">
             <h4>진행단계</h4>
             <ul class="step">
-                <li class="on">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
+                <li><button type="button">1</button></li>
+                <li><button type="button" class="on">2</button></li>
+                <li><button type="button">3</button></li>
+                <li><button type="button">4</button></li>
             </ul>
         </div>
-        <div class="photo"></div>
-        <div class="caption">
-            caption
-        </div>
+        <div class="photo"><img src="../img/img_sample.jpeg"/></div>
         <dl class="cafe_list">
             <dd><input type="checkbox" id="list1" checked> <label for="list1"><span>블라스터디카페</span></label></dd>
             <dd><input type="checkbox" id="list2"> <label for="list2"><span>블라스터디카페</span></label></dd>
@@ -33,7 +29,7 @@
             <dd><input type="checkbox" id="list4"> <label for="list4"><span>블라스터디카페</span></label></dd>
         </dl>
         <span class="btn_area">
-            <button type="button" class="btn_next" onclick="location.href='./sub/check.html'">다음</button>
+            <button type="button" class="btn_next" onclick="location.href='./sub/time.html'">다음</button>
         </span>
     </div>
     <div class="footer">
