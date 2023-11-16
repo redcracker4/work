@@ -1,75 +1,228 @@
-#wrap{
-    height: 200px;
-    width:auto;
-    max-width: 1000px;
-    margin: 0 auto;
-    height: auto;
-    background-color: rgb(255, 255, 255);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*header*/
+#wrap {
+    background: #113036;
 }
-/* header */
-#header {background-color: rgb(0, 119, 255);
-        display: flex; justify-content: space-around;}
-.top_area{display: none;}
-.display{display: flex;
-            justify-content: center;
-            align-items: center;}
-#header .nav{float: right;}
-#header .nav li {position: relative; float: left; width: 150px; text-align: center; list-style-type: none;}
-#header .nav li a {display: block; font-size: 30px; padding: -10px 0px 0px; text-decoration: none;}
-#header .nav li a:hover{color: #ffffff;}
-#header .nav li .menu{display: none; position: absolute; left: -40px; top: 67px; z-index: 100;}
-#header .nav li .menu li a{padding: 5px; background:linear-gradient(0deg,#90d4ff 35%,#ffffff);}
-#header .nav li .menu li a:hover{color: #00bfff;}
-/* section 1*/
-.container{display: flex; flex-direction: column; align-items: center;}
-.mission{width:90%; height: 70px; display: flex; justify-content: space-between; align-items: center; margin: 10px;}
-.final{font-size: 30px; padding-left: 2%; display: flex; justify-content: flex-start; align-items: center;}
-.complete{font-size: 20px;background-color: #00bfff; text-decoration: none;}
-.coin{width: 30px; height: 30px; padding-left:10px ;}
-.container .finish a:hover{color:#90d4ff}
-/* swction 2 */
-.community{display: flex; justify-content: center;}
-.img{width: 40%; height: auto ; padding: 20px;}
-/* coin */
-.change{display: flex; justify-content: space-around; align-items: center;}
-.change img{padding-left: 10%;}
-
-
-/* phone */
-@media screen and (max-width: 768px){
-    /* header */
-    #header{
-        display: none;
-        
+.header {
+    background: #5cc5ab;
+    width: 92%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2% 4%;
+    overflow: auto;
 }
-.clearfix{display: flex;
-    justify-content: space-around;
-    padding-right: 30px;}
-   .top_area{display: flex;
-align-items: center; 
-justify-content: flex-end;
-padding-right: 10px;}
-.profile{width: 50px;}
+.header h1 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 180%;
+    display: inline;
+    float: left;
+    padding-right: 5%;
+}
+.header ul {
+    float: left;
+    width: 50%;
+}
+.header ul li {
+    float: left;
+    color: #fff;
+    margin-top: 7%;
+    width: 45%;
+    text-align: center;
+    float: left;
+    border-left: 1px solid #fff;
+}
+.header ul li a{
+    color:#fff;
+}
+.header ul li a:link, 
+.header ul li a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+.header ul li a:hover, 
+.header ul li a:focus, 
+.header ul li a:active {
+    color: yellow; 
+    text-decoration: none;
+}
 
-.menubar{ ;
-    display: flex;
-justify-content: center;}
-.menubar a {
-    float: inline-start;
-    display: flex;
+
+/*컨텐츠영역*/
+.contents {
+    padding: 5% 4% 0 4%;
+}
+
+.main .graphbox {
+    background: #718863;
+    border-radius: 10px;
+    width: 90%;
+    height: 370px;
+    padding: 5% 5% 0 5%;
+    box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+}
+.main .graphbox p {
+    color: #fff;
+    font-size: 1.8em;
+    line-height: 130%;
+}
+.graph {
+    text-align: center;
+    margin: 5%;
+}
+/*차트*/
+.chart {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transition: 0.3s;
+    background:#718863;
+    display:inline-block;
+    box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+}
+
+.chart:after{ /* 가상선택자는 도넛 모양을 만들기 위함이다.*/
+    content:'';
+    background: #718863;  /* 백그라운드 컬러로 중앙가리기 */
+    position: absolute;
+    top:50%; left:50%;
+    width:150px; height:150px; /* 도넛의 너비 설정 */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%) inset;
+}
+.chart-bar{
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    background: conic-gradient(#9986dd 50deg, #fbb871 50deg);/* 차트 설정 */
+}
+.bar {
     width: 100%;
+    height: 40px;
+    background: #efefef;
+    margin-top: 5%;
 }
-.menubar a img {width: 100%;}
+.bar span.oversea {
+    background: #39c9e9;
+    display: inline;
+    width: 50%;
+    display: block;
+    float: left;
+    line-height: 250%;
+    text-align: center;
+    color: #fff;
+}
+.bar span.domestic {
+    background: #e34141;
+    display: inline;
+    width: 30%;
+    display: block;
+    float: left;
+    line-height: 250%;
+    text-align: center;
+    color: #fff;
+}
+.bar span.deposit {
+    background: #efefef;
+    display: inline;
+    width: 20%;
+    display: block;
+    float: left;
+    line-height: 250%;
+    text-align: center;
+}
+.group {
+    margin: 5% 0 0 0;
+    background: #39c9e9;
+    border-radius: 10px;
+    width: 90%;
+    height: 70px;
+    padding: 5%;
+    box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+}
+.group li {
+    color: #fff;
+    margin: 2% 0;
+    width: 45%;
+    float: left;
+}
+.group li span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5%;
+    margin-bottom: 1px;
+}
+.group li span.type01 {
+    background: #e34141;
 
+}
+.group li span.type02 {
+    background: pink;
 
-/* section */
-.final{font-size: 20px;}
+}
+.group li span.type03 {
+    background: blue;
+
+}
+.group li span.type04 {
+    background: yellow;
+
 }
 
-/* footer */
+/*이벤트*/
+.event .box {
+    border-radius: 10px;
+    width: 90%;
+    height: 200px;
+    padding: 5%;
+    margin-bottom: 5%;
+    box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+    position: relative;
+}
+.olive {
+    background: #98833a;
+}
+.mint {
+    background:#5cc5ab;
+}
+.event .box.olive p {
+    font-size: 1.5em;
+    color: #fff;
+    line-height: 180%;
+}
+.event .box.mint p {
+    font-size: 1.6em;
+    color: #fff;
+    line-height: 150%;
+}
+.event .box p span {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.event .box button {
+    position:absolute;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 30px;
+    border: none;
+    padding:2% 5%;
+    font-size: 1.2em;
+}
+.event .box.olive button {
+    background: #caa935;
+    color: #fff;
+}
+.event .box.mint button{
+    background: #37adb5;
+    color: #fff;
+}
 
-@media screen and (min-width: 769px) {
-     .menubar{visibility: hidden;
-    }
-    
-    }
+/*푸터*/
+.footer {
+    visibility: hidden;
+}
