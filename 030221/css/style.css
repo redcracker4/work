@@ -24,7 +24,7 @@
 .btn_area button.btn_next {
     float: right;
     margin:5% 0;
-    border-radius: 5px;background:#efefef;
+    border-radius: 5px;background:#fdfbc6;
     border: none;
     width: 100%;
     padding: 3% 0;
@@ -49,9 +49,9 @@
     float: right;
     font-size: .8em;
     font-weight: normal;
-    width: 18%;
-    border: 1px soid green;
+    width: 25%;
     margin-top: 3px;
+    float: right;
 }
 .step li button {
     display: inline-block;
@@ -161,12 +161,10 @@ input#list4:checked + label:before {
 }
 .seat_no li {
     float: left;
-    border: 1px solid #e2dcdc;
     width: 12%;
     height: 50px;
     margin: 3% 0;
     margin-left:10%;
-    padding:1%;
 }
 .seat_no li:first-child,
 .seat_no li:nth-child(5),
@@ -175,9 +173,41 @@ input#list4:checked + label:before {
     width: 12%;
     margin-left: 6%;
 }
-.seat_no li.checked {
+.seat_no li button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border: 1px solid #e2dcdc;
+}
+.seat_no  li button:active,
+.seat_no  li button:hover{
+  border: 1px solid #333;
+}
+.seat_no  li button:focus {
+    border: 1px solid #333;
+    background: #333;
+    color: #fff;
+  }
+.seat_no  li button:disabled {
+  opacity: 0.5;
+  background: efefef;
+  border: 1px solid #e2dcdc;
+}
+.seat_no li button.checked {
     background: #e2dcdc;
 }
+.seat_no  li button.checked:active,
+.seat_no  li button.checked:hover,
+.seat_no  li button.checked:focus {
+  background:#333;
+  color: #fff;
+}
+.seat_no  li button.checked:disabled {
+  opacity: 0.5;
+}
+
 /*설명*/
 .description {
     padding : 5% 0;
@@ -188,6 +218,9 @@ input#list4:checked + label:before {
 }
 .description p span {
     color : #e2dcdc;
+}
+.description p span.selected {
+    color: #333;
 }
 /*검색*/
 .search_box {
@@ -208,9 +241,9 @@ input#list4:checked + label:before {
     border: none;
     border-radius: 5px;
     padding: 3% 4%;
-    width: 90%;
-    margin-bottom: 10%;
+    width: 92%;
     color: #bdbdbd;
+    margin-bottom: 5%;
 }
 .search_box button.btn_search {
     background: url(../img/bnt_search.png) no-repeat;
@@ -219,15 +252,15 @@ input#list4:checked + label:before {
     float: right;
     position: absolute;
     right: 3%;
-    top:33%;
+    top:40%;
     border: none;
     display: inline-block;
     text-indent: -9999px;
-    cursor: pointer
+    cursor: pointer;
 }
 /*시간*/
 .time>h4 {
-    margin: 5% 0 2% 0;
+    margin: 10% 0 2% 0;
     font-weight: bold;
 
 }
@@ -246,20 +279,32 @@ input#list4:checked + label:before {
 .time dl dt {
     font-size: .8em;
 }
-.time dl dd {
+.time dl dd button {
     border: 1px solid gray;
     padding: 2%;
-    width: 27.5%;
+    width: 32%;
+    height: 50px;
     margin: 2% 0 0 2%;
     float: left;
     text-align: center;
     font-size: .8em;
 } 
-.time dd:nth-of-type(1),
-.time dd:nth-of-type(4),
-.time dd:nth-of-type(7) {
+.time dd:nth-of-type(1) button,
+.time dd:nth-of-type(4) button,
+.time dd:nth-of-type(7) button {
     margin: 2% 0 0 0;
+    display: inline-block;
 }
+.time dd button:active,
+.time dd button:hover,
+.time dd button:focus {
+  background:#333;
+  color: #fff;
+}
+.time dd button:disabled {
+  opacity: 0.5;
+}
+
 .time button.btn_more {
     width: 100%;
     padding: 2%;
@@ -273,6 +318,7 @@ input#list4:checked + label:before {
     border: none;
     cursor: pointer;
 }
+
 /*푸터*/
 .footer {
     background: #efefef;
