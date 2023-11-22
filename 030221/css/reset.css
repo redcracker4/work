@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Noto Sans KR';
 }
 ol, ul {
 	list-style: none;
@@ -42,6 +43,6 @@ table {
 	border-spacing: 0;
 }
 
-a {color:#fff;}
-a:link, a:visited {color: #fff; text-decoration: none;}
-a:hover, a:focus, a:active {color: yellow; text-decoration: none; }
+a {color:#000;}
+a:link, a:visited {color: #000; text-decoration: none;}
+a:hover, a:focus, a:active {color: #000; text-decoration: none; background: #none;}
