@@ -464,7 +464,7 @@ input#list4:checked + label:before {
     }
     
     .list .title {
-        width: 46%;
+        width: 50%;
         background: lightgray;
         padding: 1%;
         font-weight: bold;
