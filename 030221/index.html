@@ -3,45 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>스마트메이트:스터디카페선택하기</title>
+    <title>스마트메이트</title>
     <link rel="stylesheet" href="./css/reset.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script> 
+        var userAgent = navigator.userAgent.toLowerCase(); // 접속 핸드폰 정보 
+           
+        // 모바일 홈페이지 바로가기 링크 생성 
+        if(userAgent.match('iphone')) { 
+            document.write('<link rel="apple-touch-icon" href="./img/icon_logo.png" />') 
+        } else if(userAgent.match('ipad')) { 
+            document.write('<link rel="apple-touch-icon" sizes="72*72" href="./img/icon_logo.png" />') 
+        } else if(userAgent.match('ipod')) { 
+            document.write('<link rel="apple-touch-icon" href="./img/icon_logo.png" />') 
+        } else if(userAgent.match('android')) { 
+            document.write('<link rel="shortcut icon" href="./img/icon_logo.png" />') 
+        } 
+    </script>
 </head>
-<body id="wrap">
+<body id="wrap" onload="initialize()">
     <div class="header">
-        <h1><a href="../index.html">스마트메이트</a></h1>
+        <h1><a href="#">스마트메이트</a></h1>
         <ul>
-            <li>이용안내</li>
-            <li>이용하기</li>
-            <li>마이페이지</li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#" class="on">이용하기</a></li>
+            <li><a href="#">마이페이지</a></li>
             <li><a href="#">전체메뉴보기</a></li>
         </ul>
     </div>
-    <div class="contents list">
-        <div class="title">
-            <h4>진행단계</h4>
-            <ul class="step">
-                <li><button type="button" onclick="location.href='../index.html'">1</button></li>
-                <li><button type="button" onclick="location.href='list.html'" class="on">2</button></li>
-                <li><button type="button" onclick="location.href='time.html'">3</button></li>
-                <li><button type="button" onclick="location.href='check.html'">4</button></li>
-            </ul>
+    <div class="contents search">
+        <div class="search_box">
+            <label>내 위치 찾기</label>
+            <input type="text" class="input_add" value="주소입력"/>
+            <button type="button" class="btn_search">검색</button>
         </div>
-        <div class="photo"><img src="../img/img_sample.jpeg"/></div>
-        <dl class="cafe_list">
-            <dd><input type="checkbox" id="list1" checked><label for="list1"><span>블라스터디카페</span></label></dd>
-            <dd><input type="checkbox" id="list2"> <label for="list2"><span>바짝독서실</span></label></dd>
-            <dd><input type="checkbox" id="list3"> <label for="list3"><span>작심스터티카페</span></label></dd>
-            <dd><input type="checkbox" id="list4"> <label for="list4"><span>비에이블스터디카페-선유도역센터</span></label></dd>
-            <dd><input type="checkbox" id="list4"> <label for="list4"><span>타임스터디카페 당산점</span></label></dd>
-            <dd><input type="checkbox" id="list4"> <label for="list4"><span>토즈스터디센터</span></label></dd>
-            <dd><input type="checkbox" id="list4"> <label for="list4"><span>플랜에이스터디카페</span></label></dd>
-            <dd><input type="checkbox" id="list4"> <label for="list4"><span>르하임스터디카페</span></label></dd>
-        </dl>
-        <button type="button" class="btn_more">더보기</button>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1625837601914!2d126.74256737540546!3d37.50408337205484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7d0f6889a31d%3A0x4011f5738b664fa3!2z6rK96riw64-EIOu2gOyynOyLnCDsobDrp4jro6jroZwgMTU!5e0!3m2!1sko!2skr!4v1699183197433!5m2!1sko!2skr" width="100%" height="99%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <span class="btn_area">
-            <button type="button" class="btn_next" onclick="location.href='time.html'">다음</button>
+            <button type="button" class="btn_next" onclick="location.href='./sub/list.html'">다음</button>
         </span>
     </div>
 </body>
